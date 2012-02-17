@@ -2,34 +2,10 @@
 <html>
 <head>
   <meta charset='utf-8'>
-
   <title>anselmh/head-js-performance @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #ffffff;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #000000; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #000000; }
-    h3 { text-align: center; color: #000000; }
-    a { color: #000000; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Francois+One' rel='stylesheet' type='text/css'>
+  <link href='style.css' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
   <a href="https://github.com/anselmh/head-js-performance"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
@@ -37,38 +13,39 @@
 
     <div class="download">
       <a href="https://github.com/anselmh/head-js-performance/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
+        <img border="0" width="40" src="https://github.com/images/modules/download/zip.png"></a>
       <a href="https://github.com/anselmh/head-js-performance/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
+        <img border="0" width="40" src="https://github.com/images/modules/download/tar.png"></a>
     </div>
 
-    <h1><a href="https://github.com/anselmh/head-js-performance">head-js-performance</a>
-      <span class="small">by <a href="https://github.com/anselmh">anselmh</a></span></h1>
+    <h1 id="title"><a href="https://github.com/anselmh/head-js-performance">head-js<br>
+performance</a><br>
+      <span class="small">by <a href="https://github.com/anselmh">Anselm Hannemann</a></span></h1>
 
     <div class="description">
       This is a stat. repo w/ results of respnd.js loading and parsing in IE, Chrome, Firefox, exectued in head.
     </div>
 
-    
-
-    
-
-    
+    <article>
+    <h2>Conclusions:</h2>
+	<ul>
+    	<li>If you're using respond.js you have 1 additional HTTP-Request.</li>
+        <li>If you're using respond.js you have ~1kb additional filesize (minified)</li>
+        <li>If you're using respond.js you might expericence lacks on loadtime when using IE≤8 and more than 3 external files in head.</li>
+        <li>If you're using respond.js you might expect increasement of about 1-50ms on pageload in modern browsers (Chrome, Firefox)</li>
+        <li>If you're using respond.js you might expect increasement of about 50-120ms on pageload in older browsers (tested in IE8)</li>
+        <li>If you're using respond.js you will get media-query support for older browsers</li>
+	</ul>
+    </article>
 
     
       <h2>License</h2>
-      <p>CC-BY-SA</p>
+      <p><a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a></p>
     
 
     
-      <h2>Authors</h2>
-      <p>Anselm Hannemann (info@anselm-hannemann.com)</p>
-    
-
-    
-      <h2>Contact</h2>
-      <p>Anselm Hannemann (info@anselm-hannemann.de)<br/>      </p>
-    
+      <h2>Authors &amp; contact</h2>
+      <p>Anselm Hannemann (@anselmhannemann)</p>
 
     <h2>Download</h2>
     <p>
